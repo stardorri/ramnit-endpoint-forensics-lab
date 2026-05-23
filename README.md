@@ -53,7 +53,7 @@ python vol.py -f $mem windows.filescan
 
 ---
 
-# Environment Setup
+## Environment Setup
 
 ![windows-info](screenshots/windows-info.png)
 ![cmdline](screenshots/cmdline.png)
