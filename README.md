@@ -45,10 +45,10 @@ The objective of this investigation was to analyze a Windows memory dump, identi
 ## Commands Used
 
 powershell
-python vol.py -f $mem windows.info
-python vol.py -f $mem windows.cmdline
-python vol.py -f $mem windows.netscan
-python vol.py -f $mem windows.filescan
+- python vol.py -f $mem windows.info
+- python vol.py -f $mem windows.cmdline
+- python vol.py -f $mem windows.netscan
+- python vol.py -f $mem windows.filescan
 
 ---
 
