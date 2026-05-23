@@ -10,6 +10,15 @@ The objective of this investigation was to analyze a Windows memory dump, identi
 
 ---
 
+## Key Findings
+
+- Identified malicious process masquerading as Chrome installer
+- Observed outbound communication to suspicious IP
+- Correlated malware hash and domain indicators
+- Confirmed malicious artifact through memory analysis
+
+---
+
 # Lab Information
 
 | Category | Value |
@@ -33,9 +42,21 @@ The objective of this investigation was to analyze a Windows memory dump, identi
 
 ---
 
+## Commands Used
+
+powershell
+python vol.py -f $mem windows.info
+python vol.py -f $mem windows.cmdline
+python vol.py -f $mem windows.netscan
+python vol.py -f $mem windows.filescan
+
+---
+
 # Environment Setup
 
 ## Volatility 3
 
-```powershell
-python vol.py -f $mem windows.info
+# Disclaimer
+
+This repository is for educational and defensive cybersecurity purposes only.
+The investigation was performed inside a safe lab environment provided by CyberDefenders.
