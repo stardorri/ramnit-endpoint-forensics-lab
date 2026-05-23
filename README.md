@@ -19,7 +19,7 @@ The objective of this investigation was to analyze a Windows memory dump, identi
 
 ---
 
-# Lab Information
+## Lab Information
 
 | Category | Value |
 |---|---|
@@ -44,17 +44,21 @@ The objective of this investigation was to analyze a Windows memory dump, identi
 
 ## Commands Used
 
-powershell
-- python vol.py -f $mem windows.info
-- python vol.py -f $mem windows.cmdline
-- python vol.py -f $mem windows.netscan
-- python vol.py -f $mem windows.filescan
+```powershell
+python vol.py -f $mem windows.info
+python vol.py -f $mem windows.cmdline
+python vol.py -f $mem windows.netscan
+python vol.py -f $mem windows.filescan
+```
 
 ---
 
 # Environment Setup
 
-## Volatility 3
+![windows-info](screenshots/windows-info.png)
+![cmdline](screenshots/cmdline.png)
+![netscan](screenshots/netscan.png)
+![filescan](screenshots/filescan.png)
 
 # Disclaimer
 
